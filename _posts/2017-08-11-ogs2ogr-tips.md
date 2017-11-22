@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ArcMap raster calculator conditional statements
+title: OGR2OGR data loading tricks
 date: 2017-06-28
 ---
 

@@ -18,9 +18,9 @@ For example, to check if a cell value is null and reassign that cell value to ze
 
 So, if you want to sum two raster layers with null values and want to substitute zeros for the nulls, do this:
 
-```
-Con(IsNull("raster_layer_1"), 0, "raster_layer_1") +
-Con(IsNull("raster_layer_2"), 0, "raster_layer_2")
-```
+
+`Con(IsNull("raster_layer_1"), 0, "raster_layer_1") +`
+`Con(IsNull("raster_layer_2"), 0, "raster_layer_2")`
+
 
 This works for ArcGIS Desktop 10.5 and you probably need the Spatial Analyst extension to be able to use the Raster Calculator. You could just use the reclassify tool to convert the null values to 0 before running the raster calculator, but that's an extra step. More information on conditional statements is available here.

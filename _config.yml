@@ -9,7 +9,7 @@ name: Tom
 description: GIS Analyst from Boston
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://github.com/tomtl/tomtl.github.io/blob/master/images/hitchhiker.png
+avatar: /images/hitchhiker.png
 
 #
 # Flags below are optional

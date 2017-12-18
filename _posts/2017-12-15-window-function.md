@@ -9,6 +9,7 @@ date: 2017-12-15
 
 #### Example
 For example, I needed determine which counties a zip code is in and how many households of the zip code are within each county. There is one row for each zip code / county pair and a column giving how many households for that zip code are within the county. To get the percentage of households that are in the county I need the sum of households for all rows of the zip code.
+
 {% highlight sql %}
 SELECT zipcode, county, overlap_households FROM zip_county_overlap ORDER BY 1, 2;
 {% endhighlight %}

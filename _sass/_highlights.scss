@@ -11,6 +11,7 @@ $violet:#AE81FF;
 .highlight{
   width: 97%;
   margin: 10px auto;
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
   font-size: 16px;
   line-height: 1.2em;
   background-color: $background;
@@ -39,7 +40,7 @@ $violet:#AE81FF;
     color:$green;
   }
   .css .k,.nb,.kd,.n{
-    font-style: italic;
+    // font-style: italic;
     color:$blue;
   }
 }

@@ -27,9 +27,11 @@ ORDER BY 1, 2;
 
 
 #### Sum of the households in a zip code
-`SELECT zipcode, county, overlap_households,`
-**`SUM(households) OVER (PARTITION BY zipcode) AS zipcode_households`**
-`FROM zip_county_overlap ORDER BY 1, 2;`
+{% highlight sql %}
+SELECT zipcode, county, overlap_households,
+SUM(households) OVER (PARTITION BY zipcode) AS zipcode_households
+FROM zip_county_overlap ORDER BY 1, 2;
+{% endhighlight %}
 
 zipcode | county         | overlap_households | zipcode_households
 --------|----------------|------------------- | ------------------
@@ -42,10 +44,13 @@ zipcode | county         | overlap_households | zipcode_households
 
 #### Percentage coverage
 
-`SELECT zipcode, county, overlap_households,`
-`SUM(households) OVER (PARTITION BY zipcode) AS zipcode_households,`
-`overlap_households / (SUM(households) OVER (PARTITION BY zipcode)) AS overlap_percent`
-`FROM zip_county_overlap ORDER BY 1, 2;`
+{% highlight sql %}
+SELECT zipcode, county, overlap_households,
+SUM(households) OVER (PARTITION BY zipcode) AS zipcode_households,
+overlap_households / (SUM(households) OVER (PARTITION BY zipcode))
+  AS overlap_percent
+FROM zip_county_overlap ORDER BY 1, 2;
+{% endhighlight %}`
 
 zipcode | county         | overlap_households | zipcode_households | overlap_percent
 --------|----------------|------------------- | -------------------|----------------

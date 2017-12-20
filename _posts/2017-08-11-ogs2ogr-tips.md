@@ -96,7 +96,8 @@ ogr2ogr -f "PostgreSQL" PG:"..." shapefile_name.shp
 For some datasets you only want to load select columns. For example, some of the American Community Survey data tables contain thousands of columns, but you only need a few loaded. Use the -select option, then include the column names in a comma separated list with double quotes around the list.
 
 {% highlight bash %}
-ogr2ogr -f "PostgreSQL" PG:"..." ACS_2015_5YR_BG.gdb X25_HOUSING_CHARACTERISTICS
+ogr2ogr -f "PostgreSQL" PG:"..."
+ACS_2015_5YR_BG.gdb X25_HOUSING_CHARACTERISTICS
 -select "geoid, B25001e1, B25002e1, B25002e2, B25002e3"
 {% endhighlight %}
 

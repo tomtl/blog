@@ -8,7 +8,7 @@ date: 2018-04-11
 
 {% highlight sql %}
 SELECT
-  ST_Dump(geom).geom
+  (ST_Dump(geom)).geom
 FROM sometable
 {% endhighlight %}
 

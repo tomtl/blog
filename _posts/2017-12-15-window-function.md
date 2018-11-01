@@ -62,4 +62,4 @@ zipcode | county         | overlap_households | zipcode_households | overlap_per
 10103   | Eaton          | 15                 | 100                | 15.0
 
 ### You did it!
-That's it! That's all I needed to do. It was easy after all. There are lots of better examples available than available than this one, I just wanted to get this down so I remembered it for next time I need to use window functions.
+That's it! That's all I needed to do. It was easy after all. There are lots of better examples available than this one, I just wanted to get this down so I remembered it for next time I need to use window functions.
